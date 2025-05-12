@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Fiche de Préinscription Étudiant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        h2, h3 {
+            text-align: center;
+        }
+        .photo {
+            text-align: right; /*  Removed since photo input is no longer included */
+        }
+        .signature {
+            margin-top: 30px;
+        }
+        .signature td {
+            border: none;
+        }
+        input, select, textarea {
+            width: 95%;
+            padding: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>THE UNIVERSITY OF MAROUA</h2>
+    <h3>FACULTY OF SCIENCE</h3>
+    <h3>FICHE DE PRE-INSCRIPTION À LA FACULTÉ DES SCIENCES<br>
+        Année Académique 2024-2025</h3>
+
+    <form action="#" method="post">  <!-- Added action and method attributes -->
+
+        <table>
+           <table>
+            <tr>
+                <td>Cycle</td>
+                <td colspan="2"><input type="text" cycle="choix" required></td>
+            </tr>
+            <tr>
+             
+           </table>
+           <h3>filières</h3>
+
+           <p>
+            <td>1er choix</td>
+            <td colspan="2"><input type="text" name="choix1" required></td>
+        </tr>
+        <tr>
+           </p>
+          
+        <p>
+            <td>2ème choix</td>
+            <td colspan="2"><input type="text" name="choix2"></td>
+        </tr>
+        <tr>
+        </p>
+           
+           <td>3ème choix</td>
+           <td colspan="2"><input type="text" name="choix3"></td>
+       </tr>
+   </table>
+           
+        <h3>ETAT CIVIL / PERSON'S PARTICULARS</h3>
+
+        <table>
+            <tr>
+                <td>Nom et Prénoms</td>
+                <td colspan="3"><input type="text" name="nom" required></td>
+            </tr>
+            <tr>
+                <td>Date de naissance</td>
+                <td><input type="date" name="date_naissance" required></td>
+                <td>Lieu de naissance</td>
+                <td><input type="text" name="lieu_naissance" required></td>
+            </tr>
+            <tr>
+                <td>Sexe</td>
+                <td>
+                    <select name="sexe" required>
+                        <option value="">--Sélectionner--</option>
+                        <option value="F">F</option>
+                        <option value="M">M</option>
+                    </select>
+                </td>
+                <td>Statut matrimonial</td>
+                <td>
+                    <select name="statut" required>
+                        <option value="">--Sélectionner--</option>
+                        <option value="Célibataire">Célibataire</option>
+                        <option value="Marié(e)">Marié(e)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Nationalité</td>
+                <td><input type="text" name="nationalite"></td>
+                <td>Région d'origine</td>
+                <td><input type="text" name="region_origine"></td>
+            </tr>
+            <tr>
+                <td>Nom du tuteur à Maroua</td>
+                <td><input type="text" name="tuteur"></td>
+                <td>Adresse à Maroua</td>
+                <td><input type="text" name="adresse_tuteur"></td>
+            </tr>
+        </table>
+
+        <h3>DIPLOME / CERTIFICAT</h3>
+
+        <table>
+            <tr>
+                <td>Diplôme d'entrée</td>
+                <td><input type="text" name="diplome"></td>
+            </tr>
+            <tr>
+                <td>Série</td>
+                <td><input type="text" name="serie"></td>
+            </tr>
+            <tr>
+                <td>Année d'obtention</td>
+                <td><input type="text" name="annee_obtention"></td>
+            </tr>
+            <tr>
+                <td>Mention</td>
+                <td><input type="text" name="mention"></td>
+            </tr>
+            <tr>
+                <td>Lieu d'obtention</td>
+                <td><input type="text" name="lieu_obtention"></td>
+            </tr>
+            <tr>
+                <td>Profession</td>
+                <td><input type="text" name="profession"></td>
+            </tr>
+        </table>
+
+        <div class="signature">
+            <table>
+                <tr>
+                    <td>Adresse mail + Téléphone :</td>
+                    <td><input type="email" name="email" required><br><input type="tel" name="telephone" required></td>
+                </tr>
+            </table>
+        </div>
+
+        <button type="submit">Soumettre la Fiche</button>
+
+    </form>
+
+</body>
+</html>
